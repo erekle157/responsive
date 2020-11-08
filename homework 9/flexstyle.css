@@ -1,0 +1,519 @@
+body {
+    margin: 0;
+}
+
+@font-face {
+    font-family: "small";
+    src: url("./fonts/AvenirLTStd-Book.otf"); format:"opentype";
+    font-family: "medium";
+    src: url("./fonts/AvenirLTStd-Medium.otf"); format:"opentype";
+    font-family: "heavy";
+    src: url("./fonts/AvenirNextLTPro-Heavy.otf"); format:"opentype";
+}
+
+
+
+
+
+
+
+
+
+.aside {
+    margin-left: -275px;
+    width: 365px;
+    background-color: #222222;
+    position: fixed;
+    height: 36vh;
+    overflow-y: auto;
+    padding-top: 44px;
+    padding-right: 30px;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.aside:hover {
+    margin-left: 0px;
+    cursor: pointer;
+    height: 100vh;
+}
+
+.burger {
+    margin-left: 87px;
+}
+
+h1 {
+    color: #ffffff;
+    font-family: small;
+    font-weight: 100;
+}
+
+.bold {
+    font-family:heavy;
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 30px;
+}
+
+.asideUl {
+    display:flex;
+    flex-direction: column;
+}
+
+ul li {
+    margin-bottom: 51px;
+}
+.asideUl li a {
+    text-decoration: none;
+    color:white;
+}
+
+.atag {
+    display: flex;
+    align-items: center;
+    font-family: medium;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+    width: 259px;
+    height: 60px;
+
+}
+.atag img{
+    margin-right: 15px;
+    margin-left: 30px;
+}
+
+ul li a:hover:not(.active) {
+    background-color: #FF2288;
+    color: white;
+    height: 60px;
+  }
+
+.spantag {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+    width: 259px;
+    height: 60px;
+    margin: auto;
+    font-family: medium;
+    text-align: unset;
+  }
+.more {
+    padding-top:49px;
+    padding-bottom: 111px;
+    color: #ffffff;
+
+}
+.imgM{
+    margin-right: 21px;
+}
+.acclist {
+    margin-bottom: 15px;
+}
+
+.pro-span {
+    margin-left: 626px;
+    width: 130px;
+}
+
+
+.searchbox {
+    display: flex;
+    align-items: baseline;
+    position: relative;
+    
+}
+.imgsearch {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+   cursor: pointer;
+}
+.input {
+    position: relative;
+    padding: 10px;
+    align-items: center;
+    /* margin-top: 51px; 
+    margin-left: 45px; */
+    border: none;
+    width: 446px;
+    margin-left: 25px;
+    /* height: 56px; */
+    padding: 10px;
+    border-radius: 7px;
+    outline: none;
+    background-color: #F8F8F8;
+    padding-right: 42px;
+
+}
+
+.navbar {
+    margin-left: 155px;
+    margin-top: 71px;
+    text-decoration: none;
+}
+
+.profilebox {
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    float: right;
+    font-family: small; 
+}
+
+.profilebox span {
+    color: #FF2288;
+    padding-right: 35px;
+    margin-top: 48px;
+}    
+
+.profilebox button {
+    width: 129px;
+    height: 56px;
+    border-radius: 12px;
+    background-color: #FF2288;
+    color: #FFFFFF;
+    border: none;
+    font-family: small;
+    }
+
+.filter-list {
+        display: flex;
+        flex-direction: row;
+        color: #222222;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 12px;
+        margin-right: 51px;
+        font-family: small;
+        /* padding: 20px 30px; */
+}
+.filter-a {
+    color: #222222;
+    text-decoration: none;
+    font-family: book;
+    font-size: 16px;
+    width: 75px;
+}
+
+.footer { 
+        display: flex;
+        position: fixed; 
+        bottom: 0; 
+        width: 1160px;  
+        height: 37px; 
+        background: white; 
+        margin-left: 182px;
+}
+.footer a {
+    margin-right: 20px;
+    align-items: center;
+}
+
+.footbar{
+    display: flex;
+    justify-content: center;
+    color: #222222;
+}
+
+.first-list {
+    margin-bottom: 36px;
+    margin-top: 129px;
+    margin-right: 219px;
+}
+.second-list {
+    margin-bottom: 21px;
+}
+.main-div {
+    margin-left: 344px;
+}
+
+.cards {
+    /* height: 223px; */
+    /* width: 289px; */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.card-span {
+    margin-top: 16px;
+    margin-left: 27px;
+}
+
+.card-span span {
+    font-family: madium;
+    font-size: 16px;
+}
+
+.centre {
+    text-align: center;
+    margin-right: 28px;
+}
+
+.main-cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1400px;
+    margin-left: 182px;
+}
+
+
+
+.div-2 {
+    transition: 0.3s;
+    opacity: 0;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 12px;
+    padding: 7px;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+}
+
+.div-22 {
+    transition: o.2s;
+    opacity: 0;
+    cursor: pointer;
+  
+}
+
+.cards:hover > .div-2 {
+    opacity: 1;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+}
+.cards:hover > .div-22 {
+    position: absolute;
+    top: 67px;
+    left: 5px;
+    position: absolute;
+    opacity: 1;
+}
+.icons {
+    background-color: white;
+    border-radius: 12px;
+    padding: 7px;
+    position: absolute;
+    top: 35px;
+    left: 50px;
+}
+
+.div-h2 {
+    margin-left: 758px;
+    margin-right: 555px;
+    margin-top: 86px;
+    margin-bottom: 156px;
+}
+
+.h2 {
+    font-family: madium;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.faces {
+    display: flex;
+    flex-direction: row;
+    margin-left: 182px;
+}
+
+.top-div {
+    margin-bottom: 56px;
+    margin-left: 182px;
+}
+
+.top-div p {
+    font-family: heavy;
+    font-size: 32px;
+}
+
+.bott {
+    width: 132px;
+    height: 44px;
+    background-color: #F2F2F2;
+    border: solid 1px;
+    border-radius: 12px;
+    border-color: #D8D8D8;
+    margin-left: 10%;
+    margin-top: 17px;
+}
+
+.opasity{
+    opacity: 0.5;
+}
+
+.facecards {
+    display: flex;
+    flex-direction: row;
+}
+.profilebox-img {
+    margin-left: 30px;
+    margin-top: 46px;
+    position: relative;
+}
+.absolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.relative {
+    position: relative;
+}
+.button-filter {
+    position: relative;
+    color: #222222; 
+    margin-left: 314px;
+    width: 132px;
+    border: none;
+    border-radius: 12px;
+    height: 56px;
+    border-color: #D8D8D8;
+    background-color: #F2F2F2;
+}
+.button-filter img {
+    position: absolute;
+    left: 14px;
+    top: 14px;
+}
+
+.footer-p {
+    color: black;
+    margin-left: 900px;
+    margin-bottom: 10px;
+}
+
+.upper {
+    margin-top: 30px; 
+    margin-left: 30px;
+}
+.navbar-ol {
+    display: flex;
+    
+}
+
+
+
+
+
+@media only screen and (max-width: 1024px) {
+       .input {
+           width: 158px;
+       } 
+       .main-div {
+            margin-left: -170px;
+       }
+       .searchbox {
+        margin-left: 240px;
+       }
+       .pro-span {
+           margin-left: 0;
+       }
+       .filter-a {
+        width: 30px;
+       }
+       .button-filter {
+           margin-left: 60px;
+       }
+       .main-cards {
+           width: 700px;
+       }
+       .div-h2 {
+           margin-left: 500px;
+       }
+       .faces {
+           display: flex;
+           flex-wrap: wrap;
+           width: 700px;
+       }
+       .cards {
+           margin-top: 20px;
+       }
+       .first-list {
+           margin-right: 0;
+       }
+       .footer-p {
+           margin-left: 495px;
+       }
+    
+}
+
+@media only screen and (max-width: 480px) {
+    .searchbox {
+        display: flex;
+        flex-direction: column-reverse;
+        }
+        .profilebox-img {
+            margin-left: 0;
+        }
+        .upper {
+            margin-left: 0;
+        }
+        .navbar-ol {
+            display: flex;
+            flex-direction: column;
+        }
+        .main-cards {
+            width: 680px;
+        }
+        .div-h2 {
+            margin-left: 390px;
+        }
+        .faces {
+            width: 520px;
+            margin-left: 160px;
+        }
+        .footer-p {
+            margin-right: 200px;
+        }
+}
+
+@media only screen and (max-width: 320px) {
+    .searchbox {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .pro-span {
+        margin-left: 0;
+    }
+    .main-div {
+        margin-left: 120px;
+    }
+    .button-filter {
+        margin-left: 80px;
+    }
+    .filter-list {
+        margin-left: 12px;
+        margin-right: 0;
+    }
+    .main-cards {
+        width: 300px;
+    }
+    .faces {
+        flex-wrap: wrap;
+        width: 1075px;
+    }
+    .first-list {
+        margin-right: 0;
+    }
+    .footer-p {
+        margin-left: 50px;
+    }
+    .imgsearch {
+        right: 150px;
+    }
+    .profilebox {
+        padding-left: 0;
+    }
+    .profilebox-img {
+        margin-left: 0;
+    }
+}
+
+
+
