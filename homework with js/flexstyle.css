@@ -87,7 +87,22 @@ ul li a:hover:not(.active) {
     background-color: #FF2288;
     color: white;
     height: 60px;
-  }
+}
+
+.h2 {
+    font-family: medium;
+    height: 50px;
+    width: 100px;
+    border-radius: 12px;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+
+.h2:hover {
+    background-color: #FF2288;
+    color: white;
+  }  
 
 .spantag {
     display: flex;
@@ -191,7 +206,7 @@ ul li a:hover:not(.active) {
         font-family: small;
         /* padding: 20px 30px; */
 }
-.filter-a {
+#filter-a {
     color: #222222;
     text-decoration: none;
     font-family: book;
@@ -254,11 +269,25 @@ ul li a:hover:not(.active) {
     margin-right: 28px;
 }
 
-.main-cards {
+#main-cards {
     display: flex;
     flex-wrap: wrap;
     width: 1400px;
-    margin-left: 182px;
+    margin-left: 152px;
+    max-height: 610px;
+    overflow: hidden;
+
+    -webkit-transition: max-height 0.7s;
+    -moz-transition: max-height 0.7s;
+    transition: max-height 0.7s;
+}
+
+#main-cards.open {
+    max-height: 1220px;
+
+    -webkit-transition: max-height 0.7s;
+    -moz-transition: max-height 0.7s;
+    transition: max-height 0.7s;
 }
 
 
@@ -311,7 +340,7 @@ ul li a:hover:not(.active) {
     margin-bottom: 156px;
 }
 
-.h2 {
+#h2 {
     font-family: madium;
     font-size: 16px;
     cursor: pointer;
@@ -538,6 +567,8 @@ ul li a:hover:not(.active) {
     border: none;
     margin-top: 71px;
     font-size: 18px;
+    outline: none;
+    width: 100%;
 }
 #hr {
     height: 2px;
@@ -552,6 +583,8 @@ ul li a:hover:not(.active) {
     font-size: 14px;
 }
 #in-email {
+    outline: none;
+    width: 100%;
     border: none;
     width: 166px;
     height: 24px;
@@ -603,6 +636,14 @@ ul li a:hover:not(.active) {
 }
 .absolute-3 {
     position: absolute;
-    bottom: 230px; 
+    bottom: 100px;
     left: 164px;
 }
+
+#active {
+    color: red;
+    font-size: 1.2em;
+}
+#fileter-a:hover {
+    background-color: sienna;
+} 
